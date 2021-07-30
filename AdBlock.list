@@ -1,0 +1,26 @@
+# 知乎去广告，以下规则请放置在filter_local最顶部
+IP-CIDR,118.89.204.198/32,REJECT
+IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT
+HOST,118.89.204.198,REJECT
+# 知乎去广告，以下规则的位置越前方越好
+HOST,mqtt.zhihu.com,reject
+HOST,sugar.zhihu.com,reject
+HOST,appcloud2.in.zhihu.com,REJECT
+USER-AGENT,AVOS*,REJECT
+# AD Block KEYWORD
+IP-CIDR,139.224.5.157/32,reject
+DOMAIN,analytics.umetrip.com,reject
+DOMAIN,emdcmiddleware.securities.eastmoney.com,reject
+DOMAIN-SUFFIX,adashbc.ut.taobao.com,reject
+DOMAIN,mobappconfig.securities.eastmoney.com,reject
+DOMAIN-SUFFIX,bduserlog.eastmoney.com,reject
+DOMAIN-SUFFIX,js4.eastmoney.com,reject
+DOMAIN-SUFFIX,same.eastmoney.com,reject
+DOMAIN-SUFFIX,bd-fireworks.eastmoney.com,reject
+DOMAIN,ad.12306.cn,reject
+DOMAIN,ad.12306.cn.wscdns.com,reject
+DOMAIN-SUFFIX,ads.trafficjunky.net,reject
+DOMAIN-KEYWORD,o2o-ad-dev,reject
+DOMAIN-KEYWORD,launch_v2,reject
+DOMAIN-KEYWORD,appview,reject
+DOMAIN-KEYWORD,bayescom,reject
